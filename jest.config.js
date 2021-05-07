@@ -17,15 +17,12 @@ module.exports = {
     "\\.(css|less|scss|sass)$": "identity-obj-proxy"
   },
 
-  setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
-  
   modulePaths: [
     "<rootDir>"
   ],
   
   moduleDirectories: [
     '<rootDir>/node_modules',
-    '<rootDir>/node_modules/design-react-kit/',
     '<rootDir>/src',
     '<rootDir>/utils',
   ],
@@ -38,7 +35,4 @@ module.exports = {
   // Module file extensions for importing
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
 
-  transformIgnorePatterns: [
-    "<rootDir>/node_modules/(?!(design-react-kit)/)"
-  ]
 };
